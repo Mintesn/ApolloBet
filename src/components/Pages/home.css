@@ -7,14 +7,27 @@
     background-attachment: fixed;
     display: flex;
     align-items: center;
-   
+   width: 100%;
+   object-fit: cover;
 }
+#myVideo {
+   
+    
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        
+        top: 0;
+        left: 0;
+      
+  }
 .slider{
     font-family: poppins;
     position: absolute;
     /* transform: translate(-50%,-50%); */
     width: 100%;
     color: white;
+    display: flex;
 }
 
 
@@ -24,10 +37,82 @@
     z-index: -1;
     top: 0;
     left: 0;
+    
     width: 100%;
     height: 100vh;
 }
 
-.slider h1{
-    text-align: center;
+.text{
+    font-size: 2.5rem;
+    padding-left: 35px;
+}
+.text2{
+   padding-top: 20px;
+   padding-left: 73rem;
+   font-size: 2rem;
+}
+.mcard {
+    display: flex;
+    background-color: black;
+    gap: 16px;
+    scale: 1.6;
+    width: 720px;
+    margin-top: 3.5rem;
+    padding-top: 30px;
+    padding-left: 20rem;
+}
+.card {
+    
+    left: 0px;
+    width: 140px;
+    height: 160px;
+    background-color: black;
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: o 5px 12px rgba(0, 0, 0, 0.5);
+    outline: 1px solid black;
+    overflow: hidden;
+}
+.card img {
+    width: 130px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.card:hover figcaption{
+    font-size: 0.6rem;
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top ,rgba(0,0,0,0.9) 0%,
+    rgba(0,0,0,0) 100%);
+    color: white;
+    left: 0px;
+    bottom: 0px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.card:hover ~ .card{
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(22px);
+}
+.topic{
+    background-color: black;
+    color: white;
+}
+.topic h1{
+    display: flex;
+    justify-content: center;
 }
