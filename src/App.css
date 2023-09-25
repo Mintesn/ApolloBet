@@ -4,7 +4,9 @@
 }
 
 body {
-  background-color: #b5fac7;
+  background-color: #000000;
+  width: 100%;
+  color: white;
 }
 
 /* .pages {
