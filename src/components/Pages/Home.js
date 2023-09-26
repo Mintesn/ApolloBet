@@ -8,11 +8,14 @@ import card4 from "../../images/consolting.webp"
 import card5 from "../../images/ll.jpg"
 import imo from "../../images/virtual-sports-img.webp"
 import photo from "../../images/photo.jpg"
+import { About } from "./About";
+import { Service } from "./Service";
 
 
 export const Home = () => {
   return (
     <div>
+
     <div className="section">
       <video autoPlay loop muted id="myVideo">
           <source  src={bgimg} type="video/mp4" />
@@ -86,7 +89,7 @@ export const Home = () => {
                   </article>
                    </div>
                    <div className="aplo">
-                   <img className="apl" src={photo} alt="aplo" />
+                   <h3 class="animate-charcter"> APOLLO BET</h3>
                    </div>
                    
                    <div className="topics">
@@ -107,6 +110,14 @@ export const Home = () => {
 
                    </div>
                    </div>
+                        <div className="other">
+                        <About/>
+                        
+                        </div>
+                        <div className="other">
+                       
+                        <Service/>
+                        </div>
     </div>
   );
 };

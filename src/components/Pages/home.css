@@ -12,7 +12,7 @@
 }
 #myVideo {
    
-    
+         margin-top: 70px;
         object-fit: cover;
         /* width: 100vw; */
         height: 100vh;
@@ -26,13 +26,13 @@
     position: absolute;
     /* transform: translate(-50%,-50%); */
     width: 100%;
-    color: white;
+    color: rgb(255, 251, 251);
     display: flex;
 }
 
 
 .section video {
-    background-color: black;
+    /* background-color: black; */
     position: absolute;
     z-index: -1;
     top: 0;
@@ -57,7 +57,7 @@
 }
 .mcard {
     display: flex;
-    background-color: black;
+    /* background-color: black; */
     gap: 16px;
     scale: 1.6;
     width: 720px;
@@ -71,7 +71,7 @@
     left: 0px;
     width: 140px;
     height: 170px;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 8px;
     transition: 1000ms all;
     transform-origin: center left;
@@ -94,7 +94,35 @@
 
 .aplo{
     margin-top: 3rem;
-    padding-left: 30px;
+    padding-left: 70px;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .card:hover figcaption{
@@ -106,7 +134,7 @@
     align-items: end;
     background: linear-gradient(to top ,rgba(0,0,0,0.9) 0%,
     rgba(0,0,0,0) 100%);
-    color: white;
+    color: rgb(253, 250, 255);
     left: 0px;
     bottom: 0px;
     padding-left: 12px;
@@ -120,7 +148,7 @@
 }
 .topics{
     color: white;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     padding-left: 2rem;
 }
@@ -139,12 +167,15 @@
 }
 .tx{  
     margin-top: 9rem;
-    padding: 2rem;
+    padding: 3rem;
     height: 10rem;
-   width: 40%;
+   width: 38%;
    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
    background: #365262;
 }
 .tx h1{
     color: rgb(197, 4, 4);
+}
+.other{
+    margin-top: 5rem;
 }

@@ -12,6 +12,7 @@ function NavBar() {
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
             <img className="limg" alt="logo" src="./kk.png"/>
+           
             {/* <h1><i>Apollo</i></h1> */}
           </NavLink>
 
